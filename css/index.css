@@ -67,15 +67,23 @@ h1, h2, h3, h4, h5 {
 
 nav a{
     color: lightgray;
-    text-decoration: none;
-    padding: 1%;
-}
+	text-decoration: none; 
+	padding: 6px;
+	align-items:stretch ;
 
+}
+.logo2{
+display: flex;
+padding: 4%;
+justify-content: center;
+justify-content: space-evenly;
+margin: 2%;
+}
 nav a:hover{
     color:black;
-    border: 1px solid black;
+  /*  border: 1px solid black;/*
     border-radius: 13px;
-    background: rgb(78, 101, 206);
+  /*  background: rgb(78, 101, 206); */
 }
 
 #img{
@@ -146,21 +154,114 @@ nav a:hover{
     text-align: justify
 }
 
-.bottom span{
-    padding-bottom: 2%;
-}
+	.bottom span{
+		padding-bottom: 2%;
+	}
 
 footer{
     padding-top: 2%;
     text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
-	nav a {
-	  display: block;
-	border-bottom: 1px;
+
+
+
+@media  screen and (max-width: 800px) {
+	.img-style{
+		display: none; 	
+		} 
+		.container{
+			display: block;
+			padding-top: 20px;
+		}
+		.title{
+			padding: 0;
+		}
+
+		.container,.container-2,.container-3{
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+		.middle-img{
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+		.bottom{
+			padding-left: 4%;
+			padding-right: 4%;
+			margin-top: 2%;
+		}
+}
+
+@media screen and (max-width: 500px){
+	.img-style{
+		display: none
+	} nav{
+		text-align: center;
+		margin-top: 3%;
 	}
+   nav a{
+	 display: block;
+	 width: 100%;
+	 border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+   padding: 3% 0 3% 0
+   }
+   .logo2 {
+	   display: flex;
+	   flex-direction: column-reverse;
+	   
+	   /* border: 1px solid cornflowerblue; */
+   padding: 0;
+   margin: 0;
+	   }
+   
+   
+   .container{
+	   justify-content: right ;
+   }
+
+   .logo{
+	   width: 33%;
+	   margin: 0 auto;
+	   padding-top: 2%;
+   }
+
+   .title{
+	   text-align: center;
+	   padding: 0;
+   }
+   
+   .container,.container-2,.container-3{
+	   display: block;
+	   padding-left: 4%;
+	   padding-right: 4;
+   }
+hr{
+   width: 90%;
+   border-bottom: 2px solid black
 }
-#img {
-align-content: flex-start
+   .title h1{
+	   font-size: 45px;
+   }
+
+   .container h4, .container-2 h4, .container-3 h4{
+margin-top: 7%;
+   }
+
+   .container p, .container-2 p, .container-3 p{
+	   text-align: left;
+	   padding-right: 5%;
+   }
+   .middle-img{
+	   padding: 0 4% 0 4%;
+   }
+
+   .bottom{
+	   margin-top: 4%;
+	   padding: 0 4% 0 4%;
+   }
+
 }
+
+123
